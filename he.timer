@@ -1,0 +1,11 @@
+[Unit]
+Description=Hurricane Electric DDNS update timer
+
+[Timer]
+# check: man systemd-time
+OnCalendar=*-*-* *:0/5:*
+Persistent=true
+Unit=he.service
+
+[Install]
+WantedBy=basic.target

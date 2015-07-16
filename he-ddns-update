@@ -1,0 +1,5 @@
+#!/bin/sh
+exec 1>&2
+. /etc/he.conf
+curl -s "https://$USERNAME:$PASSWORD@ipv4.tunnelbroker.net/nic/update?hostname=$TUNNELID"
+true

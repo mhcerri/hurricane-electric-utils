@@ -1,0 +1,11 @@
+[Unit]
+Description=Hurricane Electric DDNS update
+Wants=he.timer
+
+[Service]
+User=he
+Type=oneshot
+ExecStart=/usr/local/bin/he-ddns-update
+
+[Install]
+WantedBy=basic.target
