@@ -6,6 +6,7 @@ Wants=he.timer
 User=he
 Type=oneshot
 ExecStart=/usr/local/bin/he-ddns-update
+Restart=no
 
 [Install]
 WantedBy=basic.target
